@@ -1,10 +1,21 @@
 const skArray = [0, 10, 15, -2, 30, -15, 10, -50];
+const skaiciaiArray = [5, 1, 2, 3];
 
 // naudodim forEach
 
-//1. consoleje atspaustinti kiekviena reiksme
+// 1. consoleje atspaustinti kiekviena reiksme
+// skArray.forEach((sk) => console.log(sk));
 
-//2. atspaustinti visu skaiciu suma
+// 2. atspaustinti visu skaiciu suma
+function printArrTotal(arr) {
+  let total = 0;
+  arr.forEach((sk) => {
+    total = total + sk;
+  });
+  console.log('total ===', total);
+}
+printArrTotal(skArray);
+printArrTotal(skaiciaiArray);
 
 // 3. atspausdinti tik teigiamus skaicius
 
@@ -16,28 +27,30 @@ const skArray = [0, 10, 15, -2, 30, -15, 10, -50];
 
 // 7. pakeisti -2 i -25 tame paciame masyve
 
+// 8. grazinti nauja masyva kuriame yra padvigubintos reiksmes su .map
 
+// 9. grazinti nauja masyva kuriame yra skaiciai diesni uz 10 su .filter
 
 // extra sunkesnis
 // e1. is skArray su reduce grazinti vidurki
-// e2. is skArray su reduce grazinti objekta 
+// e2. is skArray su reduce grazinti objekta
 {
-  vidurkis: ''
+  vidurkis: '';
 }
-// e2. is skArray su reduce grazinti objekta 
+// e2. is skArray su reduce grazinti objekta
 {
-  vidurkis: ''
-  totalSuma: ''
+  vidurkis: '';
+  totalSuma: '';
 }
-// e2. is skArray su reduce grazinti objekta 
-{
-  teigiami: [...]
-  neigiami: [...]
-}
+// e2. is skArray su reduce grazinti objekta
+// {
+//   teigiami: [...]
+//   neigiami: [...]
+// }
 
 const arr2 = [
   [0, 15, 25],
   [15, -5, 30],
-  [-15, 7, 12]
+  [-15, 7, 12],
 ];
-// e2. is arr2 su reduce grazinti nauja masyva kuriame yra tik vienas masyvo lygis. is visu vidiniu masyvu istraukiam reiksmes ir sukeliam i viena masyva 
+// e2. is arr2 su reduce grazinti nauja masyva kuriame yra tik vienas masyvo lygis. is visu vidiniu masyvu istraukiam reiksmes ir sukeliam i viena masyva

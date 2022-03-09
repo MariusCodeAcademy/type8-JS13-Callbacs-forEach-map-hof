@@ -16,10 +16,7 @@ const skArray = [0, 10, 15, -2, 30, -15, 10, -50];
 
 // 7. pakeisti -2 i -25 tame paciame masyve
 
-const arr2 = [
-  [0, 15, 25],
-  [15, -5, 30],
-];
+
 
 // extra sunkesnis
 // e1. is skArray su reduce grazinti vidurki
@@ -37,3 +34,10 @@ const arr2 = [
   teigiami: [...]
   neigiami: [...]
 }
+
+const arr2 = [
+  [0, 15, 25],
+  [15, -5, 30],
+  [-15, 7, 12]
+];
+// e2. is arr2 su reduce grazinti nauja masyva kuriame yra tik vienas masyvo lygis. is visu vidiniu masyvu istraukiam reiksmes ir sukeliam i viena masyva 
